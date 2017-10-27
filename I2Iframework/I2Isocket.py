@@ -39,12 +39,12 @@ class IMsock(JPEG):
         bufs = []
         lst = range(0,len,LEN_PACKAGE)
         for i in lst:
-            header = 'over'+obj['format']+tem.tostring()+pack('i',i)
+            header = 'oooo'+obj['format']+tem.tostring()+pack('i',i)
             if len>=i+LEN_PACKAGE:   endp = i+LEN_PACKAGE
             else:   endp = len
             buf = header+pack('i',endp)+st[i:endp]
             bufs.append(buf)
-        # bufs[-1][:4] = 'over'+bufs[-1][]
+        bufs[-1][:4] = 'over'+bufs[-1][]
         return bufs
 
     def merge_packages(self,buf):   #将得到的网络数据包合并后解压缩为原始图像数据
