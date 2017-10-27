@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{81AD1B99-4671-4B5D-A463-D79CC9DC52F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>im_compress</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;IM_COMPRESS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>im_compress.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;IM_COMPRESS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>im_compress.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="im_compress.h" />
+    <ClInclude Include="source\jchuff.h" />
+    <ClInclude Include="source\jconfig.h" />
+    <ClInclude Include="source\jdct.h" />
+    <ClInclude Include="source\jdhuff.h" />
+    <ClInclude Include="source\jerror.h" />
+    <ClInclude Include="source\jinclude.h" />
+    <ClInclude Include="source\jmemsys.h" />
+    <ClInclude Include="source\jmorecfg.h" />
+    <ClInclude Include="source\jpegint.h" />
+    <ClInclude Include="source\jpeglib.h" />
+    <ClInclude Include="source\jversion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="im_compress.cpp" />
+    <ClCompile Include="source\jcapimin.cpp" />
+    <ClCompile Include="source\jcapistd.cpp" />
+    <ClCompile Include="source\jccoefct.cpp" />
+    <ClCompile Include="source\jccolor.cpp" />
+    <ClCompile Include="source\jcdctmgr.cpp" />
+    <ClCompile Include="source\jchuff.cpp" />
+    <ClCompile Include="source\jcinit.cpp" />
+    <ClCompile Include="source\jcmainct.cpp" />
+    <ClCompile Include="source\jcmarker.cpp" />
+    <ClCompile Include="source\jcmaster.cpp" />
+    <ClCompile Include="source\jcomapi.cpp" />
+    <ClCompile Include="source\jcparam.cpp" />
+    <ClCompile Include="source\jcphuff.cpp" />
+    <ClCompile Include="source\jcprepct.cpp" />
+    <ClCompile Include="source\jcsample.cpp" />
+    <ClCompile Include="source\jctrans.cpp" />
+    <ClCompile Include="source\jdapimin.cpp" />
+    <ClCompile Include="source\jdapistd.cpp" />
+    <ClCompile Include="source\jdatadst.cpp" />
+    <ClCompile Include="source\jdatasrc.cpp" />
+    <ClCompile Include="source\jdcoefct.cpp" />
+    <ClCompile Include="source\jdcolor.cpp" />
+    <ClCompile Include="source\jddctmgr.cpp" />
+    <ClCompile Include="source\jdhuff.cpp" />
+    <ClCompile Include="source\jdinput.cpp" />
+    <ClCompile Include="source\jdmainct.cpp" />
+    <ClCompile Include="source\jdmarker.cpp" />
+    <ClCompile Include="source\jdmaster.cpp" />
+    <ClCompile Include="source\jdmerge.cpp" />
+    <ClCompile Include="source\jdphuff.cpp" />
+    <ClCompile Include="source\jdpostct.cpp" />
+    <ClCompile Include="source\jdsample.cpp" />
+    <ClCompile Include="source\jdtrans.cpp" />
+    <ClCompile Include="source\jerror.cpp" />
+    <ClCompile Include="source\jfdctflt.cpp" />
+    <ClCompile Include="source\jfdctfst.cpp" />
+    <ClCompile Include="source\jfdctint.cpp" />
+    <ClCompile Include="source\jidctflt.cpp" />
+    <ClCompile Include="source\jidctfst.cpp" />
+    <ClCompile Include="source\jidctint.cpp" />
+    <ClCompile Include="source\jidctred.cpp" />
+    <ClCompile Include="source\jmemmgr.cpp" />
+    <ClCompile Include="source\jmemnobs.cpp" />
+    <ClCompile Include="source\jquant1.cpp" />
+    <ClCompile Include="source\jquant2.cpp" />
+    <ClCompile Include="source\jutils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="im_compress.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

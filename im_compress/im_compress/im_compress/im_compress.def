@@ -1,0 +1,4 @@
+LIBRARY "im_compress"
+EXPORTS
+compress @1
+decompress @2

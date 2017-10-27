@@ -1,0 +1,69 @@
+﻿生成启动时间为 2017/10/24 15:38:31。
+     1>项目“F:\new\im_compress\im_compress\im_compress\im_compress.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Release\im_compress.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D IM_COMPRESS_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt im_compress.cpp
+         im_compress.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\new\im_compress\im_compress\Release\im_compress.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"im_compress.def" /MANIFEST /ManifestFile:"Release\im_compress.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\new\im_compress\im_compress\Release\im_compress.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\new\im_compress\im_compress\Release\im_compress.lib" /MACHINE:X86 /DLL Release\im_compress.obj
+         Release\jcapimin.obj
+         Release\jcapistd.obj
+         Release\jccoefct.obj
+         Release\jccolor.obj
+         Release\jcdctmgr.obj
+         Release\jchuff.obj
+         Release\jcinit.obj
+         Release\jcmainct.obj
+         Release\jcmarker.obj
+         Release\jcmaster.obj
+         Release\jcomapi.obj
+         Release\jcparam.obj
+         Release\jcphuff.obj
+         Release\jcprepct.obj
+         Release\jcsample.obj
+         Release\jctrans.obj
+         Release\jdapimin.obj
+         Release\jdapistd.obj
+         Release\jdatadst.obj
+         Release\jdatasrc.obj
+         Release\jdcoefct.obj
+         Release\jdcolor.obj
+         Release\jddctmgr.obj
+         Release\jdhuff.obj
+         Release\jdinput.obj
+         Release\jdmainct.obj
+         Release\jdmarker.obj
+         Release\jdmaster.obj
+         Release\jdmerge.obj
+         Release\jdphuff.obj
+         Release\jdpostct.obj
+         Release\jdsample.obj
+         Release\jdtrans.obj
+         Release\jerror.obj
+         Release\jfdctflt.obj
+         Release\jfdctfst.obj
+         Release\jfdctint.obj
+         Release\jidctflt.obj
+         Release\jidctfst.obj
+         Release\jidctint.obj
+         Release\jidctred.obj
+         Release\jmemmgr.obj
+         Release\jmemnobs.obj
+         Release\jquant1.obj
+         Release\jquant2.obj
+         Release\jutils.obj
+            正在创建库 F:\new\im_compress\im_compress\Release\im_compress.lib 和对象 F:\new\im_compress\im_compress\Release\im_compress.exp
+         正在生成代码
+         已完成代码的生成
+         im_compress.vcxproj -> F:\new\im_compress\im_compress\Release\im_compress.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"F:\new\im_compress\im_compress\Release\im_compress.dll.manifest" /manifest Release\im_compress.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Release\im_compress.unsuccessfulbuild”。
+         正在对“Release\im_compress.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\new\im_compress\im_compress\im_compress\im_compress.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.41

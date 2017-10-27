@@ -1,0 +1,7 @@
+1 jpeg标准是常用的图片压缩方法，能够有效压缩bmp图片
+2 libjpeg是压缩库。该库以源码形式发布，其中release文件夹中已经编译产生了lib库文件。
+3 TestLibjpeg就是基于lib库编写的图像解压缩例程。
+4 lib库基于文件操作，new source中的文件是修改的，实现对内存内图像进行解压缩的程序（参考自pdf文件）。
+5 mem_jpeglib_test是基于内存版本解压缩库的例程。
+6 im_compress是基于修改的new source文件创建的动态链接库（原版发布的是静态库）库建，并向外导出了compress和decompress两个函数。
+7 I2Iframework是基于网络的图像实时传输模块
